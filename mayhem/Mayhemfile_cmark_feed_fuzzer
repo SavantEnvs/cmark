@@ -1,0 +1,9 @@
+project: savantenvs/cmark
+target: cmark_feed_fuzzer-mined-067e1fd
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cmark_feed_fuzzer-mined-067e1fd/testsuite
+cmds:
+  - cmd: /mayhem/cmark_feed_fuzzer
+    libfuzzer: true
+    timeout: 5
